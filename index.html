@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<style>
+				*, *::before, *::after {
+						box-sizing: border-box;
+				}
+
+				html, body {
+						margin: 0;
+						padding: 0;
+						background: #444;
+						color: #fff;
+						font-size: 24px;
+						font-family: "Trebuchet MS", sans-serif;
+				}
+
+				body {
+						padding: 20px;
+				}
+
+		input[type=checkbox]{
+			height: 40px;
+				width: 40px;
+		}
+
+		input[type=checkbox]::before,
+		input[type=checkbox]::after{
+				content: ' ';
+				display: block;
+				height: 40px;
+				width: 40px;
+				border: 2px solid #FFF;
+				border-radius: 4px;
+		}
+
+		input[type=checkbox]::before{
+
+		}
+
+		input[type=checkbox]::after{
+				display: none;
+		}
+
+		input[type=checkbox]:checked::after{
+		}
+
+		label{
+			cursor: pointer;
+				margin-left: 10px;
+		}
+
+		.checkbox-wrapper {
+				display: flex;
+				align-items: center;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="checkbox-wrapper">
+			<input id="one" type="checkbox">
+			<label for="one">Set up stream deck with relevant scenes</label>
+		</div>
+		<div class="checkbox-wrapper">
+			<input id="one1" type="checkbox">
+			<label for="one1">Test relevant scenes</label>
+		</div>
+		<div class="checkbox-wrapper">
+			<input id="two" type="checkbox">
+			<label for="two">Change Category, Go live message, and Title in Twitch</label>
+		</div>
+		<div class="checkbox-wrapper">
+			<input id="three" type="checkbox">
+			<label for="three">Go to the Bathroom</label>
+		</div>
+		<div class="checkbox-wrapper">
+			<input id="four" type="checkbox">
+			<label for="four">Get Water</label>
+		</div>
+		<div class="checkbox-wrapper">
+			<input id="five" type="checkbox">
+			<label for="five">Post to twitter</label>
+		</div>
+		<div class="checkbox-wrapper">
+			<input id="six" type="checkbox">
+			<label for="six">Put on heart sensor if needed</label>
+		</div>
+		<div class="checkbox-wrapper">
+			<input id="seven" type="checkbox">
+			<label for="seven">If heart sensor, start up pulsoid</label>
+		</div>
+		<div class="checkbox-wrapper">
+			<input id="eight" type="checkbox">
+			<label for="eight">Start playing music if necessary</label>
+		</div>
+	</body>
+</html>
