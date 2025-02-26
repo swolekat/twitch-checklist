@@ -78,82 +78,93 @@
 		</style>
 	</head>
 	<body>
+		<script>
+			function resetAll(){
+				const checkboxes = document.getElementsByTagName('input');
+				for(const box of checkboxes){
+					box.checked = false;
+				}
+			}
+		</script>
 		<h1>
 			Before stream checklist
 		</h1>
+		<button onclick="resetAll()">
+			Reset All
+		</button>
 		<h2>
 			Initial setup
 		</h2>
 		<div class="checkbox-wrapper">
-			<input id="two" type="checkbox">
-			<label for="two">Change Category, Go live message, and Title in Twitch. Make sure to use appropriate @'s</label>
+			<input id="1" type="checkbox">
+			<label for="1">Change Category, Go live message, and Title in Twitch. Make sure to use appropriate @'s</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="63" type="checkbox">
-			<label for="63">Make sure any guests are @-ed in title</label>
+			<input id="2" type="checkbox">
+			<label for="2">Make sure any guests are @-ed in title</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="60" type="checkbox">
-			<label for="60">Add game series and name to tags</label>
+			<input id="3" type="checkbox">
+			<label for="3">Add game series and name to tags</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="three" type="checkbox">
-			<label for="three">Go to the Bathroom</label>
+			<input id="4" type="checkbox">
+			<label for="4">Go to the Bathroom</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="four" type="checkbox">
-			<label for="four">Get Water</label>
+			<input id="5" type="checkbox">
+			<label for="5">Get Water</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="twelve" type="checkbox">
-			<label for="twelve">Turn on Lights</label>
+			<input id="6" type="checkbox">
+			<label for="6">Turn on Lights</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="17" type="checkbox">
-			<label for="17">Put do not disturb on email</label>
+			<input id="7" type="checkbox">
+			<label for="7">Put do not disturb on email</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="55" type="checkbox">
-			<label for="55">Start swolebae on 39538</label>
+			<input id="8" type="checkbox">
+			<label for="8">Start swolebae on 39538</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="56" type="checkbox">
-			<label for="56">Start swolekid on 39537</label>
+			<input id="9" type="checkbox">
+			<label for="9">Start swolekid on 39537</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="46" type="checkbox">
-			<label for="46">Press start for streaming PC</label>
+			<input id="10" type="checkbox">
+			<label for="10">Press start for streaming PC</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="54" type="checkbox">
-			<label for="54">Set up Vnyan</label>
+			<input id="11" type="checkbox">
+			<label for="11">Set up Vnyan</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="64" type="checkbox">
-			<label for="64">Set gaming scene to be correct</label>
+			<input id="12" type="checkbox">
+			<label for="12">Set gaming scene to be correct</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="70" type="checkbox">
-			<label for="70">Set bae position to be correct</label>
+			<input id="13" type="checkbox">
+			<label for="13">Set bae position to be correct</label>
 		</div>
 		<h3>
 			Gaming PC setup
 		</h3>
 		<div class="checkbox-wrapper">
-			<input id="29" type="checkbox">
-			<label for="29">Start up gaming PC OBS</label>
+			<input id="101" type="checkbox">
+			<label for="101">Start up gaming PC OBS</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="30" type="checkbox">
-			<label for="30">Send preview to streaming pc</label>
+			<input id="102" type="checkbox">
+			<label for="102">Send preview to streaming pc</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="eight" type="checkbox">
-			<label for="eight">Start playing music</label>
+			<input id="103" type="checkbox">
+			<label for="103">Start playing music</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="71" type="checkbox">
-			<label for="71">Start Gaming PC Streamerbot</label>
+			<input id="104" type="checkbox">
+			<label for="104">Start Gaming PC Streamerbot</label>
 		</div>
 
 
@@ -161,74 +172,56 @@
 			Suiting Up
 		</h2>
 		<div class="checkbox-wrapper">
-			<input id="50" type="checkbox">
-			<label for="50">Put on headband</label>
+			<input id="201" type="checkbox">
+			<label for="201">Turn on Haptic Vest + Put on</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="77" type="checkbox">
-			<label for="77">Turn on Haptic Vest + Put on</label>
-		</div>
-
-		<h3>
-			Heart Monitor
-		</h3>
-		<div class="checkbox-wrapper">
-			<input id="six" type="checkbox">
-			<label for="six">Put on heart sensor if needed</label>
+			<input id="202" type="checkbox">
+			<label for="202">Put on Trackers</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="seven" type="checkbox">
-			<label for="seven">If heart sensor, start up pulsoid</label>
+			<input id="203" type="checkbox">
+			<label for="203">Put on iphone</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="57" type="checkbox">
-			<label for="57">Turn on heart rate source</label>
-		</div>
-
-		<br><br>
-		<div class="checkbox-wrapper">
-			<input id="45" type="checkbox">
-			<label for="45">Start 3rd PC</label>
+			<input id="204" type="checkbox">
+			<label for="204">Start 3rd PC</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="39" type="checkbox">
-			<label for="39">Virtual Motion Capture (T Pose for Dominance)</label>
+			<input id="205" type="checkbox">
+			<label for="205">Start gloves</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="41" type="checkbox">
-			<label for="41">Put on iphone</label>
+			<input id="206" type="checkbox">
+			<label for="206">Calibrate</label>
 		</div>
 
 		<h2>
 			Checks
 		</h2>
 		<div class="checkbox-wrapper">
-			<input id="61" type="checkbox">
-			<label for="61">test cat of the week</label>
+			<input id="301" type="checkbox">
+			<label for="301">test cat of the week</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="48" type="checkbox">
-			<label for="48">test !sing</label>
+			<input id="302" type="checkbox">
+			<label for="302">test !swolebaesays</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="49" type="checkbox">
-			<label for="49">test !swolebaesays</label>
+			<input id="303" type="checkbox">
+			<label for="303">test swolekid</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="59" type="checkbox">
-			<label for="59">test swolekid</label>
+			<input id="304" type="checkbox">
+			<label for="304">Check desk cam</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="52" type="checkbox">
-			<label for="52">Check desk cam</label>
+			<input id="305" type="checkbox">
+			<label for="305">Clear reward queue</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="53" type="checkbox">
-			<label for="53">Check Printer Cam</label>
-		</div>
-		<div class="checkbox-wrapper">
-			<input id="15" type="checkbox">
-			<label for="15">Clear reward queue</label>
+			<input id="306" type="checkbox">
+			<label for="306">Put commands in title</label>
 		</div>
 
 
@@ -236,16 +229,16 @@
 			Final
 		</h2>
 		<div class="checkbox-wrapper">
-			<input id="nine" type="checkbox">
-			<label for="nine">Start Stream</label>
+			<input id="401" type="checkbox">
+			<label for="401">Start Stream</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="78" type="checkbox">
-			<label for="78">Start Recording (if getting game footage)</label>
+			<input id="402" type="checkbox">
+			<label for="402">Start Youtube stream</label>
 		</div>
 		<div class="checkbox-wrapper">
-			<input id="79" type="checkbox">
-			<label for="79">Start Youtube stream</label>
+			<input id="403" type="checkbox">
+			<label for="403">Pin discord message</label>
 		</div>
 	</body>
 </html>
