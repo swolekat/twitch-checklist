@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stream Checklist</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #444;
+            color: #fff;
+            font-size: 24px;
+            font-family: "Trebuchet MS", sans-serif;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        input[type=checkbox]{
+            height: 40px;
+            width: 40px;
+        }
+
+        input[type=checkbox]::before,
+        input[type=checkbox]::after{
+            content: ' ';
+            display: block;
+            height: 40px;
+            width: 40px;
+            border: 2px solid #FFF;
+            border-radius: 4px;
+        }
+
+        input[type=checkbox]::before{
+
+        }
+
+        input[type=checkbox]::after{
+            display: none;
+        }
+
+        input[type=checkbox]:checked::after{
+        }
+
+        label{
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .checkbox-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            color: #f00;
+        }
+        h2 {
+            color: #f83a3a;
+        }
+        h3 {
+            color: #ef8383;
+        }
+    </style>
+</head>
+<body>
+<script>
+    function resetAll(){
+        const checkboxes = document.getElementsByTagName('input');
+        for(const box of checkboxes){
+            box.checked = false;
+        }
+    }
+</script>
+<h1>
+    Swolekat Mod Checklist
+</h1>
+<button onclick="resetAll()">
+    Reset All
+</button>
+<h2>
+    On Stream start
+</h2>
+<div class="checkbox-wrapper">
+    <input id="1" type="checkbox">
+    <label for="1">Title is Correct</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="2" type="checkbox">
+    <label for="2">Make sure any guests are @-ed in title</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="3" type="checkbox">
+    <label for="3">Can hear swolejams</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="4" type="checkbox">
+    <label for="4">Can hear swole (unless in collab)</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="5" type="checkbox">
+    <label for="5">Category is just chatting or special events</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="6" type="checkbox">
+    <label for="6">Youtube horizontal stream has correct info</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="7" type="checkbox">
+    <label for="7">Youtube vertical stream has correc tinfo</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="8" type="checkbox">
+    <label for="8">Streamerdap is running</label>
+</div>
+
+<h2>
+    During Chatting
+</h2>
+<div class="checkbox-wrapper">
+    <input id="101" type="checkbox">
+    <label for="101">Can hear swole</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="102" type="checkbox">
+    <label for="102">Can Hear collab partners</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="103" type="checkbox">
+    <label for="103">Can Hear swolejams</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="104" type="checkbox">
+    <label for="104">Swole is using righ tmodels</label>
+</div>
+
+
+<h2>
+    On Game Start
+</h2>
+<div class="checkbox-wrapper">
+    <input id="201" type="checkbox">
+    <label for="201">Is in right category</label>
+</div>
+<div class="checkbox-wrapper">
+    <input id="202" type="checkbox">
+    <label for="202">Can hear game audio</label>
+</div>
+
+</body>
+</html>
